@@ -1,0 +1,58 @@
+import React from "react";
+import Navbar from "./components/Navbar";
+import ProductCard from "./components/ProductCard";
+
+function App() {
+  return (
+    <div>
+      <Navbar />
+      <h1>Zestara 🌿</h1>
+      <p>Welcome to HandiCrafts & Creative Works Store</p>
+    </div>
+  );
+}
+
+export default App;
+
+
+import { StrictMode } from 'react'
+import { createRoot } from 'react-dom/client'
+import './index.css'
+import App from './App.jsx'
+
+createRoot(document.getElementById('root')).render(
+  <StrictMode>
+    <App />
+  </StrictMode>,
+)
+
+
+import Navbar from "./Navbar";
+
+function App() {
+  return (
+    <>
+      <Navbar />
+      <h1>Zestara 🌿</h1>
+      <p>Welcome to HandiCrafts & Creative Works Store</p>
+    </>
+  );
+}
+
+export default App;
+
+// import React from "react";
+
+// function Home() {
+//   return (
+//     <div className="home">
+//       <section className="hero">
+//         <div className="hero-container">
+//           <h1>Some HEader</h1>
+//         </div>
+//       </section>
+//     </div>
+//   );
+// }
+
+// export default Home;
