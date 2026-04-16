@@ -2,4 +2,41 @@
   display: flex;
   background-color: $primary-color;
   color: $white;
+
+  &__container {
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  &__card {
+    margin: 3rem 0;
+  }
+}
+
+.footer {
+  &__logo h1 {
+    color: $white;
+    font-size: 2rem;
+    margin: 0;
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-family: "Exo 2";
+
+    span {
+      color: $green;
+      font-size: 3rem;
+    }
+
+    .logo-icon {
+      font-size: 1.5rem;
+      color: $white;
+      margin-right: 5px;
+    }
+  }
+
+  &__bottom {
+    text-align: center;
+  }
 }
