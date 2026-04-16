@@ -11,17 +11,30 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 0.5rem;
-  margin: 6px 0;
+  padding: 0.5rem 0;
+  // margin: 6px 0;
   border-radius: 12px;
   min-width: 300px;
   width: 100%;
 
   &__image {
-    width: 250px;
-    height: 250px;
-    border-radius: 12px;
     margin-bottom: 6px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-attachment: fixed;
+
+    img {
+      max-width: 250px;
+      width: 100%;
+      height: auto;
+      border-radius: 12px;
+      overflow: hidden;
+
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
   }
 
   &__info {
