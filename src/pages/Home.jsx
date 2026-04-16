@@ -1,6 +1,9 @@
 import React from "react";
 import ProductCard from "../components/ProductCard";
-import Image1 from "../assets/imageFirst.jpeg";
+import Image1 from "../assets/dreams.jpg";
+import Image2 from "../assets/clay.jpg";
+import Image3 from "../assets/key-tags.jpg";
+import Image4 from "../assets/bag.jpg";
 
 function Home() {
   // best Sellers array
@@ -10,28 +13,28 @@ function Home() {
       name: "Handmade Dreamcatcher",
       price: "2,500",
       artist: "Nimali Apsara",
-      image: "Image1",
+      image: Image1,
     },
     {
       id: 2,
       name: "Clay Flower Vase",
       price: "1,800",
       artist: "Nimali Apsara",
-      image: "Image1",
+      image: Image2,
     },
     {
       id: 3,
       name: "Wooden Keytag",
       price: "450",
       artist: "Nimali Apsara",
-      image: "Image1",
+      image: Image3,
     },
     {
       id: 4,
       name: "Hand-painted Tote Bag",
       price: "2,000",
       artist: "Nimali Apsara",
-      image: "Image1",
+      image: Image4,
     },
   ];
 
