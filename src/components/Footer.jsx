@@ -1,22 +1,28 @@
 //
 
-import { FaCopyright } from "react-icons/fa6";
-import { FiTwitter, FiFacebook, FiHeart } from "react-icons/fi";
+import { FaCopyright, FaGem } from "react-icons/fa6";
+import { FiInstagram, FiTwitter, FiFacebook, FiHeart } from "react-icons/fi";
 
 function Footer() {
   return (
     <footer className="footer">
       <div className="footer__container">
         <div className="footer__top">
-          <div className="footer__logo">
+          <div className="footer__logo footer__card">
+            <h1>
+              <FaGem className="logo-icon" />
+              Zestara<span>.</span>
+            </h1>
             <p>
               Authentic Sri Lanka craftmanship, delivered to your doorstep. We
               connect local artisnas with the world, celebrating heritage &
               handmade artistry.
             </p>
 
-            <div className="footer__socail">
-              {/* <a href="#">{/* <FaInstagram /> </a> */}
+            <div className="footer__socail footer__card">
+              <a href="#">
+                <FiInstagram />
+              </a>
               <a href="#">
                 <FiFacebook />
               </a>
@@ -25,21 +31,21 @@ function Footer() {
               </a>
             </div>
           </div>
-          <div className="footer__customer">
+          <div className="footer__customer footer__card">
             <a href="#">Track Your Order</a>
             <a href="#">Shipping & Returns</a>
             <a href="#">FAQs</a>
             <a href="#">Contact us</a>
           </div>
 
-          <div className="footer__company">
+          <div className="footer__company footer__card">
             <a href="#">About Zestara</a>
             <a href="#">Our Artists</a>
             <a href="#">Shop Collection</a>
             <a href="#">Terms & Conditions</a>
           </div>
 
-          <div className="footer-newsletter">
+          <div className="footer-newsletter footer__card">
             <p>Subscribe to get updates on new arrivals & artist stories.</p>
             <form action="#" method="post">
               <input type="email" name="letter" id="letter" />
