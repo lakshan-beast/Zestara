@@ -31,6 +31,7 @@
 
 import React from "react";
 import { FaOpencart } from "react-icons/fa";
+import { MdOutlineDashboardCustomize } from "react-icons/md";
 
 function ProductCard({ image, name, price, artist }) {
   return (
@@ -44,13 +45,17 @@ function ProductCard({ image, name, price, artist }) {
       </div>
 
       <div className="product-card__footer">
-        <span className="price">LKR {price}</span>
-        <button type="button" className="add-to-cart">
-          <FaOpencart /> Add to cart
-        </button>
-        <button type="button" className="customize-product">
-          Customize Product
-        </button>
+        <span className="price">LKR {price}/=</span>
+
+        <div className="product-card__buttons">
+          <button type="button" className="add-to-cart">
+            <FaOpencart /> Add to cart
+          </button>
+          <button type="button" className="customize-product">
+            <MdOutlineDashboardCustomize />
+            Customize Product
+          </button>
+        </div>
       </div>
     </div>
   );
