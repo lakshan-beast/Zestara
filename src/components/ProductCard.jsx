@@ -30,7 +30,7 @@
 // }
 
 import React from "react";
-import { BiCartAlt } from "react-icons/bi";
+import { FaOpencart } from "react-icons/fa";
 
 function ProductCard({ image, name, price, artist }) {
   return (
@@ -38,19 +38,19 @@ function ProductCard({ image, name, price, artist }) {
       <div className="product-card__image">
         <img src={image} alt={name} />
       </div>
-      <div className="product-info">
+      <div className="product-card__info">
         <h3>{name}</h3>
         <p className="artist">by {artist}</p>
+      </div>
 
-        <div className="product-card__footer">
-          <span className="price">LKR {price}</span>
-          <button type="button" className="add-to-cart">
-            <BiCartAlt />
-          </button>
-          <button type="button" className="customize-product">
-            Customize Product
-          </button>
-        </div>
+      <div className="product-card__footer">
+        <span className="price">LKR {price}</span>
+        <button type="button" className="add-to-cart">
+          <FaOpencart /> Add to cart
+        </button>
+        <button type="button" className="customize-product">
+          Customize Product
+        </button>
       </div>
     </div>
   );
