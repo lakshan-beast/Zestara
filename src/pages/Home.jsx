@@ -1,6 +1,6 @@
 import React from "react";
 import ProductCard from "../components/ProductCard";
-import Image1 from "../assets/";
+import Image1 from "../assets/imageFirst.jpeg";
 
 function Home() {
   // best Sellers array
@@ -36,8 +36,8 @@ function Home() {
   ];
 
   return (
-    // home section
     <div className="home">
+      {/* home section */}
       <section className="hero">
         <div className="hero__content">
           <h1>Handmade with Love, Just for You</h1>
@@ -66,6 +66,8 @@ function Home() {
             />
           ))}
         </div>
+
+        <button type="button">All Products</button>
       </section>
     </div>
   );
