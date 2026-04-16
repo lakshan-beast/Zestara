@@ -1,0 +1,33 @@
+@import "../abstracts/variables";
+@import "../abstracts/mixins";
+
+.add-to-cart,
+.customize-product {
+  padding: 6px 16px;
+  color: $white;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.9rem;
+  text-transform: capitalize;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  width: 200px;
+
+  &:hover {
+    transform: scale(1.03);
+  }
+}
+
+.add-to-cart {
+  background-color: $primary-color;
+}
+
+.customize-product {
+  background-color: $white;
+  color: $primary-color;
+
+  border: 1px solid $primary-color;
+}
