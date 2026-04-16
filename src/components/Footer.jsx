@@ -19,7 +19,7 @@ function Footer() {
               handmade artistry.
             </p>
 
-            <div className="footer__socail footer__card">
+            <div className="footer__socail ">
               <a href="#">
                 <FiInstagram />
               </a>
@@ -31,7 +31,9 @@ function Footer() {
               </a>
             </div>
           </div>
+
           <div className="footer__customer footer__card">
+            <h3>Customer Care</h3>
             <a href="#">Track Your Order</a>
             <a href="#">Shipping & Returns</a>
             <a href="#">FAQs</a>
@@ -39,20 +41,29 @@ function Footer() {
           </div>
 
           <div className="footer__company footer__card">
+            <h3>Company</h3>
             <a href="#">About Zestara</a>
             <a href="#">Our Artists</a>
             <a href="#">Shop Collection</a>
             <a href="#">Terms & Conditions</a>
           </div>
 
-          <div className="footer-newsletter footer__card">
+          <div className="footer__newsletter footer__card">
+            <h3>Newsletter</h3>
             <p>Subscribe to get updates on new arrivals & artist stories.</p>
             <form action="#" method="post">
-              <input type="email" name="letter" id="letter" />
+              <input
+                type="email"
+                name="letter"
+                id="letter"
+                placeholder="Subscribe..."
+                required
+              />
               <button type="submit">Subscribe</button>
             </form>
           </div>
         </div>
+
         <div className="footer__bottom">
           <p>
             <FaCopyright /> 2026 Zestara. All rights reserved. Created with{" "}
