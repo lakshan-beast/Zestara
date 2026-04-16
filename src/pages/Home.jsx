@@ -1,5 +1,6 @@
 import React from "react";
 import ProductCard from "../components/ProductCard";
+
 import Image1 from "../assets/dreams.jpg";
 import Image2 from "../assets/clay.jpg";
 import Image3 from "../assets/key-tags.jpg";
