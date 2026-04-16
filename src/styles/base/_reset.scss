@@ -15,7 +15,7 @@
 
 // other styles
 *::selection {
-  // background-color: $dark-purple2;
+  background-color: $primary-color;
   color: $white;
 }
 ::-webkit-scrollbar {
@@ -26,7 +26,7 @@
   background-color: transparent;
 }
 ::-webkit-scrollbar-thumb {
-  // background-color: $dark-purple2;
+  background-color: $primary-color;
   border-bottom-left-radius: 2rem;
 }
 html {
