@@ -1,3 +1,4 @@
+// variables colors
 $primary-color: #8d6e63;
 $secondary-color: #4e342e;
 $bg-color: #f5f5dc;
@@ -5,3 +6,9 @@ $text-color: #333;
 $white: #ffffff;
 
 $green: rgb(0, 255, 0);
+
+// breakpoints
+$breakpoint-mobile: 600px;
+$breakpoint-tablet: 800px;
+$breakpoint-laptop: 1200px;
+$breakpoint-large-desktop: 1400px;
