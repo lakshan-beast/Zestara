@@ -96,8 +96,8 @@
 
 // }
 
+// best seller part
 .best-sellers {
-  // background-color: red;
   margin: 0;
   padding: 2rem 0;
 
@@ -106,7 +106,6 @@
     text-transform: capitalize;
     color: $primary-color;
     font-size: 1.5rem;
-    // font-weight: 600;
     font-family: "Exo-2";
   }
 
@@ -125,5 +124,40 @@
       grid-template-columns: repeat(4, 1fr);
       gap: 12px;
     }
+  }
+}
+
+// service card part
+.services {
+  padding: 4rem 2rem;
+  background-color: $white;
+
+  &__grid {
+    @include flex-custom(column, space-around, center, 20px, wrap);
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+.service-card {
+  text-align: center;
+  flex: 1;
+  min-width: 250px;
+  padding: 20px;
+
+  &__icon {
+    font-size: 3rem;
+    color: $primary-color;
+    margin-bottom: 15px;
+  }
+
+  h3 {
+    font-size: 1.3rem;
+    color: $secondary-color;
+    margin-bottom: 10px;
+  }
+  p {
+    font-size: 0.9rem;
+    color: $grey-color;
   }
 }
