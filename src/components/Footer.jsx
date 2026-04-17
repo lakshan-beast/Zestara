@@ -49,7 +49,7 @@ function Footer() {
           </div>
 
           <div className="footer__newsletter footer__card">
-            <h3>Newsletter</h3>
+            {/* <h3>Newsletter</h3> */}
             <p>Subscribe to get updates on new arrivals & artist stories.</p>
             <form action="#" method="post">
               <input
