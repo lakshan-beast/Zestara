@@ -150,7 +150,7 @@ function Home() {
       <section className="artist-spolight" data-aos="fade-up">
         <div className="artist-spolight__container">
           <div className="artist-spolight__image">
-            <img src="src/assets/artists.webp" alt="Featured Artist" />
+            <img src="src/assets/artist.jpg" alt="Featured Artist" />
           </div>
           <div className="artist-spolight__info">
             <span className="badge">Featured Artist</span>
