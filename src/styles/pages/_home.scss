@@ -226,10 +226,10 @@
     align-items: center;
     gap: 50px;
 
-    @include respond(tablet) {
-      text-align: center;
-      @include flex-custom(column);
-    }
+    // @include respond(tablet) {
+    //   text-align: center;
+    //   @include flex-custom(column);
+    // }
   }
 
   &__image {
