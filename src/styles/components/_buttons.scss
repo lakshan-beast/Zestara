@@ -9,7 +9,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 0.9rem;
+  font-size: 1rem;
   text-transform: capitalize;
   cursor: pointer;
   border: none;
@@ -30,4 +30,28 @@
   color: $primary-color;
 
   border: 1px solid $primary-color;
+}
+
+.cart,
+.customize {
+  font-size: 1.3rem;
+  font-weight: 800;
+}
+
+.all-products {
+  margin: 1rem auto;
+  padding: 16px;
+  background-color: $grey-color;
+  color: $white;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  width: 200px;
+  text-align: center;
 }

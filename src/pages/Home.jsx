@@ -117,7 +117,9 @@ function Home() {
           ))}
         </div>
 
-        <button type="button">All Products</button>
+        <button type="button" className="all-products">
+          All Products
+        </button>
       </section>
 
       {/* services section */}

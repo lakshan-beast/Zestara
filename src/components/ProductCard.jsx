@@ -49,10 +49,10 @@ function ProductCard({ image, name, price, artist }) {
 
         <div className="product-card__buttons">
           <button type="button" className="add-to-cart">
-            <FaOpencart /> Add to cart
+            <FaOpencart className="cart" /> Add to cart
           </button>
           <button type="button" className="customize-product">
-            <MdOutlineDashboardCustomize />
+            <MdOutlineDashboardCustomize className="customize" />
             Customize Product
           </button>
         </div>
