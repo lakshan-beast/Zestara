@@ -85,9 +85,11 @@
 
   &__icon-item {
     font-size: 1.8rem;
+    margin: 0 6px;
     position: relative;
     cursor: pointer;
     transition: 1.5s ease;
+    color: $primary-color;
 
     &:hover {
       // background-color: red;
@@ -103,11 +105,11 @@
     top: -5px;
     right: -35px;
     // background-color: $green;
-    // color: $white;
+    color: $grey-color;
     // color: $white;
     // padding: 2px 12px;
     // border-radius: 50%;
     border-right: 2px solid $primary-color;
-    padding-right: 6px;
+    padding-right: 8px;
   }
 }
