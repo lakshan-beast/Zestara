@@ -6,9 +6,7 @@ import "aos/dist/aos.css";
 
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
-import ProductCard from "./components/ProductCard";
-import CategoryCard from "./components/CategoryCard";
-import ServiceCard from "./components/ServiceCard";
+import AllProducts from "./pages/AllProducts";
 import Footer from "./components/Footer";
 
 function App() {
@@ -17,14 +15,14 @@ function App() {
       duration: 1000,
       once: true,
     });
-  });
+  }, []);
 
   return (
     <>
       <Navbar />
       <Routes>
-        <Route path="/" element-={<Home />} />
-        <Route path="/shop" element-={<AllProducts />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/all-products" element={<AllProducts />} />
       </Routes>
       <Footer />
     </>
