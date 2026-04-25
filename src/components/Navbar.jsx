@@ -1,16 +1,17 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { FaGem, FaSearch, FaOpencart, FaRegUser } from "react-icons/fa";
 
 function Navbar() {
   return (
     <nav className="navbar">
       <div className="navbar__container">
-        <div className="navbar__logo">
+        <Link to="/" className="navbar__logo">
           <h1>
             <FaGem className="logo-icon" />
             Zestara<span>.</span>
           </h1>
-        </div>
+        </Link>
 
         <div className="navbar__search">
           <input
