@@ -1,5 +1,5 @@
-@import "../abstracts/variables";
-@import "../abstracts/mixins";
+// @import "../abstracts/variables";
+// @import "../abstracts/mixins";
 
 .add-to-cart,
 .customize-product {
@@ -9,12 +9,15 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-direction: row;
+  gap: 12px;
   font-size: 1rem;
   text-transform: capitalize;
   cursor: pointer;
   border: none;
   outline: none;
-  width: 200px;
+  width: 100%;
+  margin: 0 6px;
 
   &:hover {
     transform: scale(1.03);
@@ -38,7 +41,7 @@
   font-weight: 800;
 }
 
-.all-products {
+.all-products-btn {
   margin: 1rem auto;
   padding: 16px;
   background-color: $grey-color;
