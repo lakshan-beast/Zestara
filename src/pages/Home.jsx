@@ -52,11 +52,11 @@ function Home() {
     },
   ];
 
-  // const randomProducts = useMemo(() => {
-  //   return [...allProducts].sort(() => 0.5 - Math.random()).slice(0, 4);
-  // }, []);
+  const randomProducts = useMemo(() => {
+    return [...allProducts].sort(() => 0.5 - Math.random()).slice(0, 4);
+  }, []);
 
-  const randomProducts = allProducts.slice(0, 4);
+  // const randomProducts = allProducts.slice(0, 4);
 
   return (
     <div className="home">
