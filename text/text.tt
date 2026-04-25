@@ -56,3 +56,40 @@ export default App;
 // }
 
 // export default Home;
+
+
+// import ProductCard from "./components/ProductCard";
+// import CategoryCard from "./components/CategoryCard";
+// import ServiceCard from "./components/ServiceCard";
+
+  // best Sellers array
+  // const bestSellers = [
+  //   {
+  //     id: 1,
+  //     name: "Handmade Dreamcatcher",
+  //     price: "2,500",
+  //     artist: "Nimali Apsara",
+  //     image: Image1,
+  //   },
+  //   {
+  //     id: 2,
+  //     name: "Clay Flower Vase",
+  //     price: "1,800",
+  //     artist: "Saman Kumara",
+  //     image: Image2,
+  //   },
+  //   {
+  //     id: 3,
+  //     name: "Wooden Keytag",
+  //     price: "450",
+  //     artist: "Nethmi Pabasara",
+  //     image: Image3,
+  //   },
+  //   {
+  //     id: 4,
+  //     name: "Hand-painted Tote Bag",
+  //     price: "2,000",
+  //     artist: "Sadun Ekanayake",
+  //     image: Image4,
+  //   },
+  // ];
