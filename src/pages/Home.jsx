@@ -1,53 +1,19 @@
-import React from "react";
+import React, { useMemo } from "react";
+import { Link } from "react-router-dom";
+
+import { FiTruck, FiAward, FiShield } from "react-icons/fi";
+
+import { allProducts } from "../data/productsDetails";
 
 import ProductCard from "../components/ProductCard";
 import ServiceCard from "../components/ServiceCard";
 import CategoryCard from "../components/CategoryCard";
-
-import { FiTruck, FiAward, FiShield } from "react-icons/fi";
-
-import Image1 from "../assets/dreamcatchers.jpg";
-import Image2 from "../assets/clay-pot.jpg";
-import Image3 from "../assets/key-tags.jpg";
-import Image4 from "../assets/bags.jpg";
 
 import HomeDecor from "../assets/home-decor.jpg";
 import Accessories from "../assets/accessories.jpg";
 import Art from "../assets/art.jpg";
 
 function Home() {
-  // best Sellers array
-  const bestSellers = [
-    {
-      id: 1,
-      name: "Handmade Dreamcatcher",
-      price: "2,500",
-      artist: "Nimali Apsara",
-      image: Image1,
-    },
-    {
-      id: 2,
-      name: "Clay Flower Vase",
-      price: "1,800",
-      artist: "Nimali Apsara",
-      image: Image2,
-    },
-    {
-      id: 3,
-      name: "Wooden Keytag",
-      price: "450",
-      artist: "Nimali Apsara",
-      image: Image3,
-    },
-    {
-      id: 4,
-      name: "Hand-painted Tote Bag",
-      price: "2,000",
-      artist: "Nimali Apsara",
-      image: Image4,
-    },
-  ];
-
   // services
   const services = [
     {
@@ -67,6 +33,7 @@ function Home() {
     },
   ];
 
+  // categories
   const categories = [
     {
       id: 1,
@@ -85,6 +52,12 @@ function Home() {
     },
   ];
 
+  // const randomProducts = useMemo(() => {
+  //   return [...allProducts].sort(() => 0.5 - Math.random()).slice(0, 4);
+  // }, []);
+
+  const randomProducts = allProducts.slice(0, 4);
+
   return (
     <div className="home">
       {/* home section */}
@@ -95,9 +68,10 @@ function Home() {
             Support local artist & find beautiful, unique crafts for your home &
             lifestyle. Simple. Authentic. Sri Lanka.
           </p>
-          <button type="button" className="hero__btn" data-aos="fade-up">
-            View All Crafts
-          </button>
+
+          <Link to="/all-products" className="hero__btn" data-aos="fade-up">
+            View All Products
+          </Link>
         </div>
       </section>
 
@@ -106,7 +80,17 @@ function Home() {
         <h2 className="section-title">Best Sellers</h2>
 
         <div className="product-grid">
-          {bestSellers.map((product) => (
+          {/* {bestSellers.map((product) => (
+            <ProductCard
+              key={product.id}
+              image={product.image}
+              name={product.name}
+              artist={product.artist}
+              price={product.price}
+            />
+          ))} */}
+
+          {randomProducts.map((product) => (
             <ProductCard
               key={product.id}
               image={product.image}
@@ -117,9 +101,13 @@ function Home() {
           ))}
         </div>
 
-        <button type="button" className="all-products">
+        {/* <button type="button" className="all-products">
           All Products
-        </button>
+        </button> */}
+
+        <Link className="all-products-btn" to="/all-products">
+          View All Products
+        </Link>
       </section>
 
       {/* services section */}
